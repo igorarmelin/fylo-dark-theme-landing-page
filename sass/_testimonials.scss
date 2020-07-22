@@ -1,0 +1,60 @@
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 185px;
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 0 360px;
+        background-color: $color-dark-blue-testimonials;
+        padding: 45px 30px 25px 30px;
+        margin: 0 auto;
+        border-radius: 5px;
+
+        @media only screen and (max-width: 600px) {
+            padding: 25px 20px 25px 20px;
+            flex: 0 0 280px;
+            margin-bottom: 25px;
+        }
+
+        &-p {
+            font-size: 13px;
+            letter-spacing: 1px;
+
+            @media only screen and (max-width: 600px) {
+                font-size: 8.5px;
+                line-height: 1.8;
+            }
+        }
+
+        &__info {
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+
+            &-img {
+                width: 30px;
+                height: 30px;
+                border-radius: 100px;
+                margin-right: 10px;
+            }
+
+            &-profile {
+
+                &--name {
+                    font-size: 12px;
+                    font-weight: 700;
+                    margin-bottom: 3px;
+                }
+
+                &--occupation {
+                    font-size: 8px;
+                    color: rgb(207, 207, 207);
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}

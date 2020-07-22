@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px 0px;
+
+    @media only screen and (max-width: 600px) {
+        margin: 25px 15px;
+    }
+
+    &-logo {
+
+        @media only screen and (max-width: 600px) {
+            width: 75px;
+        }
+        
+    }
+
+    &__nav {
+        display: flex;
+
+        &-item {
+            color: $color-white;
+            font-family: $font-family-spec;
+            font-weight: 300;
+            margin-left: 55px;
+
+            @media only screen and (max-width: 600px) {
+                font-size: 10px;
+            }
+        }
+    }
+}

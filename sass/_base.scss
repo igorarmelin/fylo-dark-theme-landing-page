@@ -1,0 +1,61 @@
+/* COLORS */
+$color-dark-blue-main: hsl(218, 28%, 13%);
+$color-dark-blue-intro-email: hsl(217, 28%, 15%);
+$color-dark-blue-footer: hsl(216, 53%, 9%);
+$color-dark-blue-testimonials: hsl(219, 30%, 18%);
+
+/* Colors Buttons */
+$color-cyan-button: hsl(176, 68%, 64%);
+$color-blue-button: hsl(198, 60%, 50%);
+
+/* Color neutral */
+$color-white: hsl(0, 0%, 100%);
+
+/* Typography */
+$font-size-body: 14px;
+
+/* Typography for Headings, Call-to-actions, Header Navigation */
+$font-family-spec: 'Raleway', sans-serif;
+
+/* Typography for Body */
+$font-family-body: 'Open Sans', sans-serif;
+
+/****************************/
+/***** Default settings *****/
+/****************************/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-dark-blue-intro-email;
+    font-size: $font-size-body;
+    font-family: $font-family-body;
+    font-weight: 300;
+    color: $color-white;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    border-style: none;
+    max-width: 100%;
+}
+
+a, li {
+    text-decoration: none;
+    list-style: none;
+}

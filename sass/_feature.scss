@@ -1,0 +1,34 @@
+.feature {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 0 0 40%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 95px;
+
+        &-img {
+            margin-bottom: 25px;
+        }
+
+        &-h2 {
+            font-family: $font-family-spec;
+            margin-bottom: 15px;
+        }
+
+        &-p {
+            width: 350px;
+
+            @media only screen and (max-width: 600px) {
+                width: 305px;
+            }
+        }
+    }
+}
